@@ -1,0 +1,25 @@
+{
+    "name": "meerkatmcr/simple-blocker",
+    "description": "Simple user-blocking functionality for Laravel 5.x",
+    "authors": [
+        {
+            "name": "Stephen Smith",
+            "email": "stephen.smith3141@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MeerkatMcr\\SimpleBlocker\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MeerkatMcr\\SimpleBlocker\\ServiceProvider"
+            ]
+        }
+    }
+}
