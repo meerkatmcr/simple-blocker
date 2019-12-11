@@ -16,6 +16,16 @@ class ServiceProvider extends BaseProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__ . '/../migrations');
+
+        $this->publishes(
+            [
+                __DIR__ . '/../config/simple-blocker.php' => config_path('simple-blocker.php'),
+            ]
+        );
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/simple-blocker.php', 'simple-blocker'
+        );
     }
 
     public function register()

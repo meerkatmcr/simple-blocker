@@ -17,7 +17,7 @@ class CheckUnblocked
     public function handle($request, Closure $next)
     {
         if ($request->user()->isBlocked()) {
-            abort(403, 'Your account is blocked.');
+            abort(403, config('simple-blocker.message'));
         }
         return $next($request);
     }
