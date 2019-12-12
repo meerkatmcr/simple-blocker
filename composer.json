@@ -1,5 +1,6 @@
 {
     "name": "meerkatmcr/simple-blocker",
+    "version": "1.0.0",
     "description": "Simple user-blocking functionality for Laravel 5.x",
     "authors": [
         {
