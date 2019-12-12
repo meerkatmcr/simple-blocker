@@ -2,14 +2,17 @@
 Very simple user-blocking functionality for Laravel 5.x
 
 ## Installation
-This package assumes that your users table is called `users`.
-### Process
+### Notes
+This package assumes that your users table is called `users`. If it is not,
+publish the migration and edit the table name.
+
+### Method
 * Install the package with `composer install meerkatmcr/simple-blocker`
 * Perform the database migration `php artisan migrate`
 * Add the `MeerkatMcr\SimpleBlocker\Traits\Blockable` trait to your user model.
  
 ## Usage
-### User model methods
+### Blocking and unblocking
 The `Blockable` trait provides three methods:
 * `block()` block the user
 * `unblock()` unblock the user

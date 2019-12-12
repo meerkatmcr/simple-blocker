@@ -19,7 +19,13 @@ class ServiceProvider extends BaseProvider
 
         $this->publishes(
             [
-                __DIR__ . '/../config/simple-blocker.php' => config_path('simple-blocker.php'),
+                __DIR__ . '/../config/' => config_path('simple-blocker.php'),
+            ]
+        );
+
+        $this->publishes(
+            [
+                __DIR__ . '/../migrations/' => database_path('migrations')
             ]
         );
 
