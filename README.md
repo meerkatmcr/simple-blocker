@@ -21,7 +21,7 @@ The `Blockable` trait provides three methods:
 `block()` and `unblock()` are both fluent, and neither saves the model.
 
 ### Middleware
-The `MeerkatMcr\SimpleBlocker\Middleware\CheckUnblocked` middleware will abort 
+The `MeerkatMcr\SimpleBlocker\Middleware\CheckUserBlocked` middleware will abort 
 a request with code 403 if the current user is blocked.
 
 To use it, register it in `app/Http/Kernel.php` as with any other middleware

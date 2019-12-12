@@ -3,9 +3,8 @@
 namespace MeerkatMcr\SimpleBlocker\Middleware;
 
 use Closure;
-use MeerkatMcr\SimpleBlocker\Traits\Blockable;
 
-class CheckUnblocked
+class CheckUserBlocked
 {
     /**
      * Handle an incoming request.
